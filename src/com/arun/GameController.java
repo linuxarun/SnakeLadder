@@ -51,7 +51,7 @@ public class GameController {
                 System.out.println();
                 System.out.println();
                 System.out.println();
-                System.out.println("Total Moves: + " + totalMoves + ", ------------------ Player "
+                System.out.println("Total Moves: " + totalMoves + ", ------------------ Player "
                         + playerTurn.getPiece().getColor() + " WON!!! --------------------");
 
             } else {
