@@ -15,4 +15,11 @@ public class Player {
     public void setPiece(Piece piece) {
         this.piece = piece;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "piece=" + piece +
+                '}';
+    }
 }

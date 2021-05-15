@@ -1,20 +1,12 @@
 package com.arun;
 
 public class Piece {
-    private boolean isEnd = true;
+    private String color;
     private Box box;
 
-    public Piece(boolean isEnd, Box box) {
-        this.isEnd = isEnd;
+    public Piece(Box box, String color) {
         this.box = box;
-    }
-
-    public boolean isEnd() {
-        return isEnd;
-    }
-
-    public void setEnd(boolean end) {
-        isEnd = end;
+        this.color = color;
     }
 
     public Box getBox() {
@@ -23,5 +15,21 @@ public class Piece {
 
     public void setBox(Box box) {
         this.box = box;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Piece{" +
+                "color='" + color + '\'' +
+                ", box=" + box +
+                '}';
     }
 }

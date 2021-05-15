@@ -43,4 +43,9 @@ public class Box {
     public void setAbstractSnakeLadder(AbstractSnakeLadder abstractSnakeLadder) {
         this.abstractSnakeLadder = abstractSnakeLadder;
     }
+
+    @Override
+    public String toString() {
+        return "(" + label + ", " + this.getAbstractSnakeLadder() + ")";
+    }
 }

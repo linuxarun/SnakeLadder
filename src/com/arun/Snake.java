@@ -2,7 +2,12 @@ package com.arun;
 
 public class Snake extends AbstractSnakeLadder {
 
-    public Snake(Box start, Box end) {
-        super(start, end);
+    public Snake(int id, Box start, Box end) {
+        super(id, start, end);
+    }
+
+    @Override
+    public String toString() {
+        return this.getId() + ",S";
     }
 }

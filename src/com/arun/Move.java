@@ -1,9 +1,9 @@
 package com.arun;
 
 public class Move {
-    Player player;
-    Box start;
-    Box end;
+    private Player player;
+    private Box start;
+    private Box end;
 
     public Move(Player player, Box start, Box end) {
         this.player = player;
@@ -33,5 +33,14 @@ public class Move {
 
     public void setEnd(Box end) {
         this.end = end;
+    }
+
+    @Override
+    public String toString() {
+        return "Move{" +
+                "player=" + player +
+                ", start=" + start +
+                ", end=" + end +
+                '}';
     }
 }
